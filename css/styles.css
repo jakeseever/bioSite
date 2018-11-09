@@ -1,16 +1,18 @@
 /* 
 Author: Jake Seever
 For: Mike England BioSite
-Last Update: 11/01/2018
+Last Update: 11/08/2018
 */
 
 html {
     font-size: 16px;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
-    background-color: #E0DECC;
+      background-color: #E0DECC;
+    background-color: #E0DECCE6;
     margin: 0px;
 }
 
@@ -21,70 +23,9 @@ main {
 header {
     padding: 1em;
     border: .1em solid black;
-    background-color: #3F663AE6;
-    width: 100%;
-}
-
-#mainHeading {
-    padding: 1.2em;
-    font-family: 'Cinzel', serif;
-    font-size: 2.441em;
-    text-align: center;
-}
-
-#mainHeading H1 {
-    margin-left: 10%;
-}
-
-aside {
-    background-color: #8E6E53f2;
-    display: block;
-    float: left;
-    border: .1em solid black;
-    width: 25%;
-    height: 100%;
-}
-
-aside h2 {
-    text-align: center;
-}
-
-aside ol li {
-    font-family: 'Inconsolata', monospace, Arial;
-    font-size: 1.25em;
-    line-height: 1.25em;
-    margin-top: 2%;
-}
-
-#intro,
-#midSection,
-#kennelSection {
-    font-family: 'Inconsolata', monospace, Arial;
-    display: block;
-    /*border: .1em solid black;*/
-    width: 74%;
-    float: right;
-}
-
-#intro h2,
-#midSection h2,
-#kennelSection h2 {
-    text-align: center;
-    font-family: 'Cinzel', serif;
-}
-
-#intro p,
-#midSection p,
-#kennelSection p {
-    font-family: 'Inconsolata', monospace, Arial;
-    font-size: 1em;
-    line-height: 1.25em;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-#midSection {
-    background-color: #7A7265CC;
+     background-color: #3F663A;
+    background-color: #3F663ACC;
+    width: 99%;
 }
 
 #headerLogo {
@@ -93,7 +34,73 @@ aside ol li {
     width: 15%;
     margin-right: 10%;
     padding: .25em;
+    min-width: 150px;
 
+}
+
+#headerLogo2 {
+    display: inline-block;
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+    padding: .25em;
+    min-width: 150px;
+
+}
+
+#mainHeading {
+    padding: 1.2em;
+    font-family: 'Cinzel', serif, Arial;
+    font-size: 2.441em;
+    text-align: center;
+}
+
+#mainHeading H1 {
+    margin-left: 10%;
+}
+
+#intro,
+#midSection,
+#kennelSection {
+    font-family: 'Inconsolata', monospace, Arial;
+    display: block;
+    width: 70%;
+    float: left;
+    margin-left:15%;
+    padding: 2%;
+}
+
+#intro h2,
+#midSection h2,
+#kennelSection h2 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1.953em;
+}
+
+#intro p,
+#midSection p,
+#kennelSection p {
+    font-family: 'Inconsolata', monospace, Arial;
+    font-size: 1.10em;
+    line-height: 1.5em;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-weight:500;
+}
+.firstParagraph{
+    margin-top: 5%;
+}
+
+#midSection {
+    background-color: #7A7265;
+    background-color: #7A7265BF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-weight: 700;
 }
 
 #DHKLink {
@@ -112,6 +119,7 @@ aside ol li {
 
 .contentImg {
     width: 23%;
+    min-width: 200px;
     display: inline-block;
     float: right;
     clear: both;
@@ -133,12 +141,13 @@ footer {
     width: 100%;
     border: .1em solid black;
     padding: 1em;
-    background-color: #3F663AE6;
+    background-color: #3F663A;
+    background-color: #3F663ACC;
 
 }
 
-footer h4 {
+footer h3 {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.563em;
 
 }
