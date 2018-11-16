@@ -1,31 +1,65 @@
 /* 
 Author: Jake Seever
 For: Mike England BioSite
-Last Update: 11/08/2018
+Last Update: 11/15/2018
 */
+
+/* Main Styles Structure Styles*/
 
 html {
     font-size: 16px;
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 body {
-      background-color: #E0DECC;
+    background-color: #E0DECC;
+    /* Background Color with transparency but not supported in IE/Edge as HEX value */
     background-color: #E0DECCE6;
     margin: 0px;
 }
 
 main {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
+/* Sticky Nav Styles */
+
+nav {
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #00cc00;
+}
+
+
+/* Header Styles */
+
 header {
+    display: block;
     padding: 1em;
-    border: .1em solid black;
-     background-color: #3F663A;
+    border-bottom: .1em solid black;
+    background-color: #3F663A;
+    /* Background Color with transparency but not supported in IE/Edge as HEX value  */
     background-color: #3F663ACC;
-    width: 99%;
+    width: 100%;
+
 }
 
 #headerLogo {
@@ -35,7 +69,7 @@ header {
     margin-right: 10%;
     padding: .25em;
     min-width: 150px;
-
+    max-width: 200px;
 }
 
 #headerLogo2 {
@@ -45,7 +79,7 @@ header {
     margin-left: 5%;
     padding: .25em;
     min-width: 150px;
-
+    max-width: 200px;
 }
 
 #mainHeading {
@@ -59,6 +93,8 @@ header {
     margin-left: 10%;
 }
 
+/* Section Styles */
+
 #intro,
 #midSection,
 #kennelSection {
@@ -66,7 +102,7 @@ header {
     display: block;
     width: 70%;
     float: left;
-    margin-left:15%;
+    margin-left: 15%;
     padding: 2%;
 }
 
@@ -86,14 +122,16 @@ header {
     line-height: 1.5em;
     margin-left: 3%;
     margin-right: 3%;
-    font-weight:500;
+    font-weight: 500;
 }
-.firstParagraph{
-    margin-top: 5%;
+
+.firstParagraph {
+    margin-top: 3%;
 }
 
 #midSection {
     background-color: #7A7265;
+    /* Background Color with transparency but not supported in IE/Edge as HEX value */
     background-color: #7A7265BF;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -103,9 +141,39 @@ header {
     font-weight: 700;
 }
 
+
+.contentImg {
+    width: 23%;
+    min-width: 200px;
+    display: inline-block;
+    float: right;
+    clear: both;
+    margin-bottom: .6em;
+    margin-left: 4%;
+    border: .2em solid black;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-right: 1%;
+}
+
+/* Link Styles */
+
+#skip {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
 #DHKLink {
     text-decoration: none;
-    color: rgba(96, 210, 20, 1.0);
+    color: #00cc00;
     font-weight: 700;
 }
 
@@ -117,31 +185,29 @@ header {
     color: rgba(177, 16, 16, 1.0);
 }
 
-.contentImg {
-    width: 23%;
-    min-width: 200px;
-    display: inline-block;
-    float: right;
-    clear: both;
-    margin-bottom: .6em;
-    margin-left: .5em;
-    border: .2em solid black;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    margin-right: 1%;
+#top {
+    margin-left: 3%;
+    text-decoration: none;
+    color: #339933;
+    font-weight: 700;
+    font-size: 1.1em;
 }
+
+#top:hover {
+    color: #00cc00;
+}
+
+/* Footer Styles */
 
 footer {
     display: block;
     float: left;
     clear: both;
     width: 100%;
-    border: .1em solid black;
+    border-top: .1em solid black;
     padding: 1em;
     background-color: #3F663A;
+    /* Background Color with transparency but not supported in IE/Edge */
     background-color: #3F663ACC;
 
 }
@@ -150,4 +216,12 @@ footer h3 {
     text-align: center;
     font-size: 1.563em;
 
+}
+
+/* Screen Width Footer Adjustment */
+
+@media only screen and (max-width: 800px) {
+    footer {
+        font-size: .75em;
+    }
 }
